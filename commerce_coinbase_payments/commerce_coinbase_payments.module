@@ -17,7 +17,7 @@ function commerce_coinpayments_help($route_name, RouteMatchInterface $route_matc
 
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Module for Coinbase Commerce  - Bitcoin/Bitcoin Cash/Litecoin/Ethereum Payments') . '</p>';
+      $output .= '<p>' . t('Module for PrivacyGate  - Bitcoin/Bitcoin Cash/Litecoin/Ethereum & more Payments') . '</p>';
 
       return $output;
   }
