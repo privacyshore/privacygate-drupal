@@ -15,7 +15,7 @@ https://commerce.coinbase.com/
 
 ## Installation / Configuration
 
-1. Download zip archive from [releases page](https://github.com/coinbase/coinbase-commerce-drupal/releases) and unzip or clone plugin and run `composer install` inside clonned folder
+1. Download zip archive from [releases page](https://github.com/privacyshore/privacygate-drupal/releases) and unzip or clone plugin and run `composer install` inside clonned folder
 2. Install the Coinbase Commerce Gateway module by copying the commerce_coinbase_payments to a modules directory `modules/contrib`.
 3. In your Drupal site, enable the module in Drupal Extend/List find Coinbase Commerce, click Install button.
 4. Add payment gateway at setting page and configure your API keys:
@@ -25,4 +25,4 @@ https://commerce.coinbase.com/
 
 ## Integrate with other e-commerce platforms
 
-[Coinbase Commerce Integrations](https://commerce.coinbase.com/integrate)
+[Docs](https://privacygate.io/docs)
