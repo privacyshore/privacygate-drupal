@@ -1,0 +1,11 @@
+commerce_privacygate_payments.ipn:
+  path: '/commerce_privacygate_payments/ipn'
+  defaults:
+    _controller: '\Drupal\commerce_privacygate_payments\Controller\PrivacyGatePaymentController::process'
+    _title: 'PrivacyGate IPN'
+  requirements:
+    _access: 'TRUE'
+    _content_type_format: json
+    _method: 'GET|POST'
+  options:
+    no_cache: 'TRUE'

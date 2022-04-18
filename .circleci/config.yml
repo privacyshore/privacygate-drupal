@@ -8,14 +8,14 @@ jobs: # a collection of steps
     docker: # run the steps with Docker
     - image: circleci/php:5.6-fpm-node # ...with this image as the primary container; this is where all `steps` will run
     environment:
-      ZIP_ARCHIVE: coinbase-commerce-drupal.zip
+      ZIP_ARCHIVE: privacygate-drupal.zip
     steps: # a collection of executable commands
     - checkout # special step to check out source code to working directory
     - run: sudo composer self-update
     - run: composer install -n --prefer-dist
     - run:
         name: Create zip archive
-        command: zip -r $ZIP_ARCHIVE commerce_coinbase_payments
+        command: zip -r $ZIP_ARCHIVE commerce_privacygate_payments
     - run:
         name: Upload archive to github releases
         command: php ./.circleci/scripts/release_uploader.php --file=$(pwd)/$ZIP_ARCHIVE --repo==$REPO --github_user=$GITHUB_USER --token=$GITHUB_AUTH_TOKEN

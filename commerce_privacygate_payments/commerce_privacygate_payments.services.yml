@@ -1,0 +1,8 @@
+services:
+  commerce_privacygate_payments.logger:
+    class: Drupal\Core\Logger\LoggerChannel
+    factory: logger.factory:get
+    arguments: ['commerce_privacygate_payments']
+  commerce_privacygate_payments.ipn:
+    class: Drupal\commerce_privacygate_payments\Ipn
+    arguments: ['@database', '@entity_type.manager', '@commerce_privacygate_payments.logger', '@config.factory']
